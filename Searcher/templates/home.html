@@ -1,0 +1,16 @@
+{%extends "base.html"%}
+
+{%block title%}
+Delete
+{%endblock%}
+
+{%block body%}
+<p>
+    DeletePage
+    <label><form method="post" name="delete_form"><input name="delete_text" type="text"><input type="submit"></form></label>
+    <a href="/search"><button>Search page</button></a>
+    {%if result%}
+    <p> {{result}}</p>
+    {%endif%}
+</p>
+{%endblock%}

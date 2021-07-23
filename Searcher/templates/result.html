@@ -1,0 +1,11 @@
+{%extends "search.html"%}
+
+{%block result%}
+{% for val in result %}
+<div class>
+    <h3> {{val.created_date}}</h3>
+    <h4> {{val.rubrics}}</h4>
+    <p>{{val.text}}</p>
+</div>
+{% endfor %}
+{%endblock%}

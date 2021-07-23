@@ -1,0 +1,16 @@
+{%extends "base.html"%}
+
+{%block title%}
+Search
+{%endblock%}
+
+{%block body%}
+<p>
+    Search
+
+    <label><form method="post" name="search_form"><input name="search_text" type="text"><input type="submit"></form></label>
+    <a href="/delete"><button>Delete page</button></a>
+    {%block result%}
+    {%endblock%}
+</p>
+{%endblock%}

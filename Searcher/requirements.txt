@@ -1,0 +1,4 @@
+elasticsearch
+flask
+flask-sqlalchemy
+flask-migrate

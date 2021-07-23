@@ -1,0 +1,84 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a simple searcher. To visit search page open localhost/search in your browser. To visit delete page open localhost/delete.",
+    "version": "1.0.0",
+    "title": "Searcher"
+  },
+  "tags": [
+    {
+      "name": "search",
+      "description": "Search text"
+    },
+    {
+      "name": "delete",
+      "description": "delete text"
+    }
+  ],
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/search": {
+      "post": {
+        "tags": [
+          "search"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Unexpected error."
+          }
+        },
+        "summary": "Search text"
+      },
+      "get": {
+        "tags": [
+          "search"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Unexpected error."
+          }
+        },
+        "summary": "Get search page"
+      }
+    },
+    "/delete": {
+      "post": {
+        "tags": [
+          "delete"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Unexpected error."
+          }
+        },
+        "summary": "delete text by id"
+      },
+      "get": {
+        "tags": [
+          "delete"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Unexpected error."
+          }
+        },
+        "summary": "Get delete page"
+      }
+    }
+  }
+}

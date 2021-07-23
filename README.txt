@@ -1,0 +1,1 @@
+Выполните "docker-compose up" в Searcher
